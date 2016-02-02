@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Scroll</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <link rel="import" href="bower_components/rise-google-sheet/rise-google-sheet.html">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+
+  <!-- =======
+  first scroll example taking text and image from google sheet
+  -->
+
+   <rise-google-sheet
+      id = "googleSheet"
+      key="19hjojWb1T2oTQ44OFh6lXE9AsWmoclMP0tOrRWWlkJI"
+      min-row="1"
+      refresh="3000"></rise-google-sheet>
+  <span class="scroller" id="scrollerDark">
+  <!-- first instance of text from google sheet goes here -->
+  </span>
+
+  <div class="scroll-container">
+  <div class="image" id="image">
+  <div class="overflow-hidden relative" id="secondContainer">
+
+  <img src="example-image.jpeg" id="mainImage">
+
+  <span class="scroller front" id="scrollerLight">
+  <!-- second instance of text from google sheet goes here -->
+  </span>
+
+  </div><!--overflow-hidden-->
+  </div><!--scroll-image-->
+  </div><!--scroll-container-->
+
+<!--=======-->
+
+
+  </div><!--wrapper-->
+  <script src="scripts/googleSheet.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

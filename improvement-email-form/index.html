@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Email from Template Test</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <link rel="import" href="bower_components/rise-google-sheet/rise-google-sheet.html">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <rise-google-sheet
+    id="googleSheet"
+    key="1S96-nYeudxXsCSbNXpyB-SsFSY2f49_rFeG4-LzS8ck"
+    min-row="1"
+    refresh="30"></rise-google-sheet>
+    <div id="target-data">
+
+    </div>
+    <form class="main-form" id="contact_form" method="post" action="//formspree.io/peter@cameroncodes.com">
+      <input type="hidden" name="_next" value="https://storage.googleapis.com/risemedialibrary-f114ad26-949d-44b4-87e9-8528afc76ce4/peter/Improvements/improvement-email-form-variations/improvement-email-form/destination.html" />
+      <input type="hidden" name="jobdetails" id="target-data-hidden"/>
+      <input id="cc-email" type="hidden" name="_cc" value="" />
+      <input id="target-email" type="text">
+      <button id="submit" value="Submit">Submit</button>
+    </form>
+  </div>
+
+<script src="spreadsheet.js"></script>
+<script src="form.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
