@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+  
+    <g id="hamburger" class="">
+      <polygon id="bottom" points="100,100 50,100 0,100 0,80 50,80 100,80">
+        <animate id="ani-bottom-to-exe" keyTimes="0; 1" calcMode="spline" keySplines=".5 0 .5 1" begin="indefinite" fill="freeze" attributeName="points" dur="500ms" to="50,50 50,50 50,50 50,50 50,50 50,50"/>
+        <animate id="ani-bottom-to-hamburger" keyTimes="0; 1" calcMode="spline" keySplines=".5 0 .5 1" begin="indefinite" fill="freeze" attributeName="points" dur="500ms" to="100,100 50,100 0,100 0,80 50,80 100,80"/>
+      </polygon>
+      <polygon id="middle-bottom" points="100,60 50,60 0,60 0,40 50,40 100,40">
+          <animate id="ani-middlebottom-to-exe" keyTimes="0; 1" calcMode="spline" keySplines=".5 0 .5 1" begin="indefinite" fill="freeze" attributeName="points" dur="500ms" to="78.3,92.4 42.9,57.1 7.6,21.7 21.7,7.6 57.1,42.9 92.4,78.3"/>
+          <animate id="ani-middlebottom-to-hamburger" keyTimes="0; 1" calcMode="spline" keySplines=".5 0 .5 1" begin="indefinite" fill="freeze" attributeName="points" dur="500ms" to="100,60 50,60 0,60 0,40 50,40 100,40"/>
+      </polygon>
+      <polygon id="middle-top" points="100,60 50,60 0,60 0,40 50,40 100,40">
+          <animate id="ani-middletop-to-exe" keyTimes="0; 1" calcMode="spline" keySplines=".5 0 .5 1" begin="indefinite" fill="freeze" attributeName="points" dur="500ms" to="92.4,21.7 57.1,57.1 21.7,92.4 7.6,78.3 42.9,42.9 78.3,7.6"/>
+          <animate id="ani-middletop-to-hamburger" keyTimes="0; 1" calcMode="spline" keySplines=".5 0 .5 1" begin="indefinite" fill="freeze" attributeName="points" dur="500ms" to="100,60 50,60 0,60 0,40 50,40 100,40"/>
+      </polygon>
+      <polygon id="top" points="100,20 50,20 0,20 0,0 50,0 100,0">
+          <animate id="ani-top-to-exe" keyTimes="0; 1" calcMode="spline" keySplines=".5 0 .5 1" begin="indefinite" fill="freeze" attributeName="points" dur="500ms" to="50,50 50,50 50,50 50,50 50,50 50,50"/>
+          <animate id="ani-top-to-hamburger" keyTimes="0; 1" calcMode="spline" keySplines=".5 0 .5 1" begin="indefinite" fill="freeze" attributeName="points" dur="500ms" to="100,20 50,20 0,20 0,0 50,0 100,0"/>
+      </polygon>
+    </g>
+
+</svg>
